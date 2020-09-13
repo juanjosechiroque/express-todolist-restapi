@@ -6,7 +6,7 @@ const app = express();
 require("./config/database.js");
 
 // Settings
-app.set("port", 3000);
+app.set("port", process.env.PORT || 3000);
 
 // Headers
 app.use(function (req, res, next) {
